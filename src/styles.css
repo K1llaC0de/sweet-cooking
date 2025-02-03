@@ -1,1 +1,110 @@
-@import "tailwindcss";
+.welcome-page {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.image-container {
+    position: relative; 
+}
+
+.image-container img {
+    border-radius: 30px; 
+    height: 850px !important;
+    margin-top: 25px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 12%;
+    left: 52%;
+    transform: translate(-50%, -50%); 
+    font-family: 'Ribeye', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.text-middle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.background-text {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 442px;
+    background-color: rgba(129, 129, 129, 0.12);
+    padding: 30px;
+    text-align: center;
+}
+
+.button-icon {
+    width: 20px; 
+    height: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 120px; 
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-register {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(251, 78, 78, 0.64);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+}
+
+.button-login {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(170, 169, 169, 0.81);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    width: 135px;
+}
+
+.button-login:hover,
+.button-register:hover {
+    box-shadow: 0 0 15px rgba(91, 220, 222, 0.8); /* Green glow */
+    background-color: #47acb3; /* Slightly darker green */
+}
+

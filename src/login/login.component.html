@@ -1,0 +1,46 @@
+<div class="login-container">
+  <div class="login-form">
+    <h2>Ready to be the best baker in your family?</h2>
+    <h1>Sign Up on SweetCooking</h1>
+    <form [formGroup]="loginForm">
+      <!-- Email Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>E-mail</mat-label>
+        <mat-icon matPrefix>mail</mat-icon>
+        <input matInput placeholder="example@email.com" formControlName="email" required />
+      </mat-form-field>
+
+      <!-- Password Field -->
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <mat-icon matPrefix>lock</mat-icon>
+        <input matInput type="password" placeholder="Enter password" formControlName="password" required />
+      </mat-form-field>
+
+      <!-- Sign Up Button -->
+      <button mat-raised-button color="primary" class="full-width signup-btn" (click)="signUpOnApp()" [disabled]="loginForm.invalid">
+        Sign Up
+      </button>
+    </form>
+
+    <!-- Social Login Buttons -->
+    <p class="or-text">or sign up with</p>
+    <div class="social-login">
+      <button mat-icon-button class="social-btn">
+        <img src="./assets/facebook.svg" alt="Facebook" />
+      </button>
+      <button mat-icon-button class="social-btn">
+        <img src="./assets/google.svg" alt="Google" />
+      </button>
+      <button mat-icon-button class="social-btn">
+        <img src="./assets/apple.svg" alt="Apple" />
+      </button>
+    </div>
+
+    <p class="login-text">Have an account? <a href="/login/account">Sign in</a></p>
+  </div>
+  <button class="button-backHome" routerLink="/home" (click)="goBack()">
+    <img src="./assets/back-arrow.png" alt="Back Icon" class="button-icon">
+    Back Home
+</button>
+</div>

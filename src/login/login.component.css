@@ -1,0 +1,114 @@
+/* Container for centering the form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  background: #c9a1a1;
+  width: 500px;
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  border-radius: 30px;
+}
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  /* Login Form Box */
+  .login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Form Fields */
+  .full-width {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Sign Up Button */
+  .signup-btn {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #2979ff;
+    color: white;
+  }
+  
+  /* Social Login */
+  .or-text {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+    font-family: '42dot Sans', sans-serif;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sign in link */
+  .login-text {
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: '42dot Sans', sans-serif;
+    color: gray;
+    padding-top: 10px;
+  }
+
+  .login-text a {
+    color: #2979ff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .button-backHome {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(-50%);
+    background-color: rgba(170, 169, 169, 0.81);
+    border-radius: 15px;
+}
+
+.button-backHome:hover {
+    box-shadow: 0 0 15px rgba(91, 220, 222, 0.8); /* Green glow */
+    background-color: #47acb3; /* Slightly darker green */
+}
+  
